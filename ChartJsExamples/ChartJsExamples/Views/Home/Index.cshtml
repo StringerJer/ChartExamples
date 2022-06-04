@@ -2,7 +2,38 @@
     ViewData["Title"] = "Home Page";
 }
 
+@section Scripts {
+    <script src="~/lib/chart.js/dist/chart.js"></script>
+    <script src="~/js/PieChart.js" asp-append-version="true"></script>
+    <script>
+        (() => {
+             
+        }
+        )();
+    </script>
+}
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="col-md-6 container">
+            <canvas id="myChart1"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 container">
+            <canvas id="myChart2"></canvas>
+        </div>
+        <div class="col-md-6 container">
+            <canvas id="myChart3"></canvas>
+        </div>
+    </div>
+</div>
+
